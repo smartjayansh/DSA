@@ -1,0 +1,15 @@
+Array Time Complexity
+Accessing Elements
+Since elements in an array are stored at contiguous memory locations, they can be accessed very efficiently (random access) in O(1) time using indices.
+Inserting Elements
+Insertion of elements at the end of the array (at the index located to the right of the last element and there is still available space) takes O(1) time.
+Insertion of elements at the beginning or at any index of the array involves moving elements to the right if there is available space.
+If we want to insert an element at index i, all the elements starting from index i need to be shifted to the right by one position. Thus, the time complexity for inserting an element at index i is O(N - i).
+Inserting an element at the beginning of the array involves moving all elements by one position to their right, if there is available space, and takes O(N) time.
+Finding Elements
+Finding an element in an array takes O(N) time in the worst case, where N is the size of the array, as you may need to traverse the entire array.
+Deleting Elements
+Deletion of elements from the end of the array takes O(1) time.
+Deleting elements from the beginning or at any index of the array involves moving elements to the left.
+If we want to delete an element at index i, all the elements starting from index (i + 1) need to be shifted to the left by one index. Thus, the time complexity for deleting an element at index i is O(N - i).
+Deleting an element from the beginning involves moving all elements starting from index 1 to left by one position, and takes O(N) time.
